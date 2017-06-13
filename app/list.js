@@ -991,35 +991,6 @@
             "escritor": "Empress of Mars",
             "nome": "Mark Gatiss",
             "image": "s10e09"
-        }, {
-            "numeroEpisodio": "10",
-            "nome": "The Eaters of Light",
-            "escritor": "Rona Munro",
-            "image": "s10e10"
-        }, {
-            "numeroEpisodio": "11",
-            "nome": "World Enougth and Time",
-            "escritor": "Steven Moffat",
-            "multi-story": {
-                "type": "Two Parter",
-                "next": ["10.12"]
-            },
-            "image": "s10e11"
-        }, {
-            "numeroEpisodio": "12",
-            "nome": "The Doctor Falls",
-            "escritor": "Steven Moffat",
-            "multi-story": {
-                "type": "Two Parter",
-                "prev": ["10.11"]
-            },
-            "image": "s10e12"
-        }, {
-            "numeroEpisodio": "Christmas Special",
-            "escritor": "Steven Moffat",
-            "nome": "T.B.A",
-            "image": "s10xmas02",
-            "special":true
         }
     ]
 }]
