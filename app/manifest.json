@@ -1,5 +1,6 @@
 {
   "name": "Random Who",
+  "short_name": "Random Who",
   "start_url": "https://alicescfernandes.github.io/random-who",
   "display": "standalone",
   "background_color": "#000",
