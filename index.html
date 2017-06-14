@@ -217,14 +217,48 @@
             letter-spacing: 6px;
             font-size: 22px;
         }
+            .no-mobile{
+                display: none;
+            }
+            
 
         span.quote-mark {
             font-weight: 900;
         }
+        @media (max-width: 1023px) {
+            .no-mobile{
+                display: inline-block;
+            }
+            .result{
+                display: none;
+            }
+            .generator{
+                display: none;
+            }
+            
+        }
+
+        @media (width: 1024px){
+            .result {
+    width: 996px;
+    height: 447px;
+}
+.no-mobile{
+    display: none;
+}
+        }
+
+        .no-mobile {
+    width: 70%;
+    margin: auto;
+    line-height: 29px;
+}
+
     </style>
 </head>
 
 <body>
+
     <div class="background">
         <video loop="" autoplay="" muted="" src="video/bg.mp4">
         </video>
@@ -232,6 +266,12 @@
     <div class="align-center">
         <div class="vertical-aligner"></div>
 
+<div class="no-mobile">
+
+    <p>Sorry, this website is not avaliable for mobile phones</p>
+    <p>I decided to not give support to mobile phones, because the screens don't have enought width to fit all the data that appears on a normal screen resolution</p>
+    <p>Please see this page on a device with a screen width bigger than 1024px</p>
+</div>
         <div class="generator">
         <div class="mainMenu">
             <div class="logo">
