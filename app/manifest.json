@@ -1,7 +1,7 @@
 {
   "name": "Random Who",
   "short_name": "Random Who",
-  "start_url": "https://alicescfernandes.github.io/random-who",
+  "start_url": "http://localhost/",
   "display": "standalone",
   "background_color": "#000",
   "description": "A random Who generator",
