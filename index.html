@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   	<META HTTP-EQUIV="CACHE-CONTROL" content="NO-CACHE">
-   	<META name="AUTHOR" content="Alice Fernandes">
-   	<META NAME="ROBOTS" CONTENT="index,nofollow"> 
-   	<META name="COPYRIGHT" content="Done with love by Alice Fernandes">
-   	<META name="DESCRIPTION" content="This page will give you a random doctor who episode for you to watch">
+    <META HTTP-EQUIV="CACHE-CONTROL" content="NO-CACHE">
+    <META name="AUTHOR" content="Alice Fernandes">
+    <META NAME="ROBOTS" CONTENT="index,nofollow">
+    <META name="COPYRIGHT" content="Done with love by Alice Fernandes">
+    <META name="DESCRIPTION" content="This page will give you a random doctor who episode for you to watch">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
-    <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Random Who" />
-    <meta property="og:description"        content="This page will give you a random doctor who episode for you to watch" />
-    <meta property="og:image"              content="https://alicescfernandes.github.io/random-who/images/banner.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Random Who" />
+    <meta property="og:description" content="This page will give you a random doctor who episode for you to watch" />
+    <meta property="og:image" content="https://alicescfernandes.github.io/random-who/images/banner.jpg" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Random Who - Random Doctor Who episode sorter">
     <meta name="twitter:description" content="This page will give you a random doctor who episode for you to watch">
@@ -50,7 +50,7 @@
             width: 100%;
             height: 100%;
             background-color: black;
-            /* overflow: hidden; */
+            overflow: hidden;
         }
 
         .align-center {
@@ -73,26 +73,26 @@
 
         .mainMenu {
             -webkit-animation-name: opacity;
-                    animation-name: opacity;
+            animation-name: opacity;
             -webkit-animation-duration: 5s;
-                    animation-duration: 5s;
+            animation-duration: 5s;
             -webkit-animation-iteration-count: infinite;
-                    animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
             -webkit-animation-direction: alternate;
-                    animation-direction: alternate;
+            animation-direction: alternate;
             -webkit-transition: 2s opacity;
             transition: 2s opacity;
         }
 
         video {
             -webkit-animation-name: opacity-no-scale;
-                    animation-name: opacity-no-scale;
+            animation-name: opacity-no-scale;
             -webkit-animation-duration: 10s;
-                    animation-duration: 10s;
+            animation-duration: 10s;
             -webkit-animation-iteration-count: infinite;
-                    animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
             -webkit-animation-direction: alternate;
-                    animation-direction: alternate
+            animation-direction: alternate
         }
 
         img {
@@ -103,12 +103,25 @@
             outline: none;
         }
 
-        .generator {
-            text-align: center;
+        .episode-arcs {
+            height: 70px;
+        }
+
+        span.episode-arc {
             display: inline-block;
+            height: 100%;
+            width: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 18px;
+        }
+
+        .generator {
+            display: inline-block;
+            text-align: center;
             vertical-align: middle;
             -webkit-transform: scale(1);
-                    transform: scale(1);
+            transform: scale(1);
             opacity: 1;
         }
 
@@ -116,13 +129,13 @@
             0% {
                 opacity: 1;
                 -webkit-transform: scale(1);
-                        transform: scale(1)
+                transform: scale(1)
             }
 
             100% {
                 opacity: 0.6;
                 -webkit-transform: scale(0.985);
-                        transform: scale(0.985)
+                transform: scale(0.985)
             }
         }
 
@@ -130,13 +143,13 @@
             0% {
                 opacity: 1;
                 -webkit-transform: scale(1);
-                        transform: scale(1)
+                transform: scale(1)
             }
 
             100% {
                 opacity: 0.6;
                 -webkit-transform: scale(0.985);
-                        transform: scale(0.985)
+                transform: scale(0.985)
             }
         }
 
@@ -171,11 +184,12 @@
         }
 
 
-		
+
 
         .result {
-        	-webkit-transition: opacity 2s;
-        	transition: opacity 2s;
+            display: inline-block;
+            -webkit-transition: opacity 2s;
+            transition: opacity 2s;
             background-image: url(images/background.png);
             width: 1190px;
             height: 540px;
@@ -183,7 +197,6 @@
             background-repeat: no-repeat;
             vertical-align: middle;
             mix-blend-mode: lighten;
-            display: inline-block;
             visibility: hidden;
             opacity: 0;
         }
@@ -193,11 +206,13 @@
             margin-top: 5px;
             mix-blend-mode: lighten;
         }
-        .episode-picture{
-        	    height: 228px;
-    background-position: top center;
-    background-repeat: no-repeat;
-    margin-top: 8px;
+
+        .episode-picture {
+            background-image: url(images/s00.png);
+            height: 228px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            margin-top: 8px;
         }
 
         .episode-title {
@@ -212,48 +227,114 @@
             font-size: 18px;
         }
 
+        .episode-quote {
+            margin-top: 32px;
+            margin-bottom: 32px;
+            line-height: 28px;
+        }
+
         .episode-quote h4 {
+            margin: 0px;
             font-weight: 200;
             letter-spacing: 6px;
             font-size: 22px;
         }
-            .no-mobile{
-                display: none;
-            }
-            
+
+        .no-mobile {
+            display: none;
+        }
+
 
         span.quote-mark {
             font-weight: 900;
         }
-        @media (max-width: 1023px) {
-            .no-mobile{
+
+        @media (max-width: 767px),
+        (orientation:portrait) {
+            .no-mobile {
                 display: inline-block;
             }
-            .result{
+            .result {
                 display: none;
             }
-            .generator{
+            .generator {
                 display: none;
             }
-            
+            .episode-arcs {
+                display: none;
+            }
         }
 
-        @media (width: 1024px){
+
+
+        @media(width:1024px) and (orientation:landscape) {
             .result {
-    width: 996px;
-    height: 447px;
-}
-.no-mobile{
-    display: none;
-}
+                width: 996px;
+                height: 447px;
+            }
+            .no-mobile {
+                display: none;
+            }
+
+            .episode-arcs {
+                display: none;
+            }
+        }
+
+        @media (orientation:landscape) and (min-width:768px) and (max-width:1023px) {
+
+
+            .generator img {
+                margin-bottom: 77px;
+                width: 80%;
+            }
+
+
+            button {
+                width: 200px;
+                height: 51px;
+                background-size: cover;
+            }
+
+            .result {
+                width: 99%;
+                height: 380px;
+            }
+
+            .episode-picture {
+                height: 144px;
+                background-size: contain;
+            }
+
+            .episode-detail p {
+                font-size: 11px;
+            }
+
+            .episode-title {
+                font-size: 29px;
+            }
+
+            .episode-writer {
+                font-size: 14px;
+            }
+
+            .episode-quote h4 {
+                font-size: 13px;
+                letter-spacing: 3px;
+                font-weight: 400;
+            }
+
+            .episode-quote {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
         }
 
         .no-mobile {
-    width: 70%;
-    margin: auto;
-    line-height: 29px;
-}
-
+            width: 70%;
+            margin: auto;
+            line-height: 29px;
+        }
     </style>
 </head>
 
@@ -266,28 +347,30 @@
     <div class="align-center">
         <div class="vertical-aligner"></div>
 
-<div class="no-mobile">
+        <div class="no-mobile">
 
-    <p>Sorry, this website is not avaliable for mobile phones</p>
-    <p>I decided to not give support to mobile phones, because the screens don't have enought width to fit all the data that appears on a normal screen resolution</p>
-    <p>Please see this page on a device with a screen width bigger than 1024px</p>
-</div>
+            <p>Sorry, this website is not avaliable for mobile phones</p>
+            <p>I decided to not give support to mobile phones, because the screens don't have enought width to fit all the data
+                that appears on a normal screen resolution</p>
+            <p>Please see this page on a device with a screen width bigger than 1024px</p>
+        </div>
         <div class="generator">
-        <div class="mainMenu">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-            <div class="btn">
-                <button></button>
-                <div>
+            <div class="mainMenu">
+                <div class="logo">
+                    <img src="images/logo.png">
                 </div>
-            </div>
+                <div class="btn">
+                    <button></button>
+                    <div>
+                    </div>
+                </div>
             </div>
 
         </div>
 
         <div class="result">
-            <div class="episode-picture"><!--<img data-attr="image" src="">--></div>
+            <div class="episode-picture">
+                <!--<img data-attr="image" src="">--></div>
             <div class="episode-detail">
                 <p><span data-attr="season"></span> <span data-attr="ep"></span></p>
             </div>
@@ -300,16 +383,22 @@
             </div>
 
             <div class="episode-quote">
-                <h4><span class="quote-mark">&ldquo;</span> <span data-attr="quote"></span><span class="quote-mark">&rdquo;</span></h4>
+                <h4><span class="quote-mark">&ldquo;</span>
+                    <span data-attr="quote"></span>
+                    <span class="quote-mark">&rdquo;</span>
+                </h4>
+            </div>
+
+            <div class="episode-arcs">
             </div>
         </div>
     </div>
-    
-    <script type="text/javascript" class="cleanup" src="app/app.js"></script>
-    <script class="cleanup" type="text/javascript" src="app/list.js"></script>
+
+    <script type="text/javascript" class="cleanup" src="app/app-dev.js"></script>
+    <script class="cleanup" type="text/javascript" src="app/list-full.js"></script>
 
 
-<script>
+    <!--<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -318,7 +407,8 @@
   ga('create', 'UA-100869248-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script>-->
+
 
 </body>
 
