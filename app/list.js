@@ -264,7 +264,7 @@
         }
     }, {
         "numeroEpisodio": "12",
-        "nome": "Army of Ghosts",
+        "nome": "The Sound of the Drums",
         "escritor": "Russel T. Davies",
         "arc": {
             "type": "Three Parter",
@@ -303,7 +303,8 @@
     }, {
         "numeroEpisodio": "03",
         "nome": "Planet of the Ood",
-        "escritor": "Keith Temple"
+        "escritor": "Keith Temple",
+        "theme":"s04e03"
     }, {
         "numeroEpisodio": "04",
         "nome": "The Sontaran Stratagem",
@@ -353,27 +354,21 @@
         "numeroEpisodio": "11",
         "escritor": "Russel T. Davies",
         "nome": "Turn Left",
-        "arc": {
-            "type": "Three Parter",
-            "next": ["s04e12", "s04e13"],
-        }
     }, {
         "numeroEpisodio": "12",
         "nome": "The Stolen Earth",
         "escritor": "Russel T. Davies",
         "arc": {
             "type": "Three Parter",
-            "prev": ["s04e11"],
             "next": ["s04e13"],
         }
     }, {
         "numeroEpisodio": "13",
         "nome": "The Journey's End",
-        "theme": "s04e13",
         "escritor": "Russel T. Davies",
         "arc": {
             "type": "Three Parter",
-            "prev": ["s04e11", "s04e12"],
+            "prev": ["s04e12"],
         }
     }, {
         "numeroEpisodio": "Christmas Special",
@@ -522,7 +517,8 @@
         "numeroEpisodio": "Christmas Special",
         "escritor": "Steven Moffat",
         "nome": "A Christmas Carol",
-        "special": true
+        "special": true,
+"image":"s05xmas01",
     }, {
         "numeroEpisodio": "01",
         "nome": "The Impossible Astronaut",
@@ -650,7 +646,9 @@
     }, {
         "numeroEpisodio": "Christmas Episode",
         "escritor": "Steven Moffat",
-        "nome": "The Snowmen"
+        "nome": "The Snowmen",
+"image":"s07xmas03",
+        "special":true
     }, {
         "numeroEpisodio": "06",
         "nome": "The Bells of Saint John",
@@ -700,6 +698,7 @@
         "nome": "The Name Of The Doctor",
         "escritor": "Steven Moffat",
         "theme": "50th",
+"image":"50th",
         "quote": "No sir..all thirteen of them"
     }, {
         "numeroEpisodio": "Christmas Special",
@@ -1049,8 +1048,8 @@ randomWho.sizes = {
     "s05e05":124,
     "s05e08":134,
     "s05e09":95,
-    "s05e12":155,
-    "s05e13":101,
+    "s05e11":155,
+    "s05e012":101,
     "s06e05":124,
     "s06e06":141,
     "s06e12":103,
