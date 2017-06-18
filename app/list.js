@@ -69,11 +69,6 @@
         "numeroEpisodio": "11",
         "escritor": "Russel T. Davies",
         "nome": "Boom Town",
-        
-        "arc": {
-            "type": "Three Parter",
-            "next": ["s01e12", "s04e13"]
-        }
     }, {
         "numeroEpisodio": "12",
         "escritor": "Russel T. Davies",
@@ -81,8 +76,7 @@
         
         "arc": {
             "type": "Three Parter",
-            "next": ["s01e13"],
-            "prev": ["s01e11"]
+            "next": ["s01e13"]
         }
     }, {
         "numeroEpisodio": "13",
@@ -91,7 +85,7 @@
         
         "arc": {
             "type": "Three Parter",
-            "prev": ["s01e11", "s01e12"],
+            "prev": ["s01e12"],
         }
     }]
 }, {
