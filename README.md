@@ -26,7 +26,9 @@
 
 <h3 id="c2">To be implemented</h3>
 <p>Multi-part stories are still under heavy development, i will push as soon as possible</p>
+<p>Regenerate button, you can guess what it is</p>
+<p>Mute button, almost there</p>
 
 <h3 id="c3">Known Issues</h3>
-<p>Some images are missing, i'm still trying to figure out which</p
-<p>On Chrome, the fade-in transition doesn't play, and there's nothing i can do about that</p>
+<p>Some images are missing, i'm still trying to figure out which</p>
+<p>Still trying to fix the mobile presentation of this website</p>
