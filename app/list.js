@@ -221,12 +221,12 @@
         }
     }, {
         "numeroEpisodio": "06",
-        "nome": "42",
+        "nome": "The Lazarus Experiment",
         "escritor": "Chris Chibnall",
     }, {
         "numeroEpisodio": "07",
         "escritor": "Mark Gatiss",
-        "nome": "The Idiot's Lantern"
+        "nome": "42"
     }, {
         "numeroEpisodio": "08",
         "nome": "Human Nature",
@@ -886,8 +886,8 @@
         "image": "s09e08"
     }, {
         "numeroEpisodio": "09",
-        "escritor": "Sleep No More",
-        "nome": "Mark Gatiss",
+        "nome": "Sleep No More",
+        "escritor": "Mark Gatiss",
         "image": "s09e09"
     }, {
         "numeroEpisodio": "10",
