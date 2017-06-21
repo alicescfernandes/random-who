@@ -1,3 +1,5 @@
+
+<img src="https://alicescfernandes.github.io/random-who/images/banner.jpg">
 <h2>Random Who</h2>
 <h3>A random doctor who episode sorter</h3>
 
