@@ -899,6 +899,7 @@
         "numeroEpisodio": "11",
         "nome": "Heaven Sent",
         "escritor": "Steven Moffat",
+"quote":"HOW MANY SECONDS TO ETERNITY",
         "arc": {
             "type": "Two Parter",
             "next": ["s09e12"]
@@ -1005,6 +1006,16 @@
         "nome": "The Eaters of Light",
         "escritor": "Rona Munro",
         "image": "s10e10"
+    }, {
+        "numeroEpisodio": "11",
+        "nome": "World Enougth and Time",
+        "escritor": "Steven Moffat",
+        "arc": {
+            "type": "Two Parter",
+            "next": ["s10e12"]
+        },
+        "quote":"I waited for you...I waited for you",
+        "image": "s10e11"
     }
     ]
 }]

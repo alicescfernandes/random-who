@@ -71,6 +71,10 @@
             cursor: pointer;
         }
 
+        .regenaration button{
+            background-image: url(images/r/btn.png);
+
+        }
 
         .mainMenu {
             -webkit-animation-name: opacity;
@@ -100,6 +104,20 @@
             margin-bottom: 120px;
         }
 
+        .regenaration img {
+            margin-bottom:60px;
+        }
+
+
+        .regenaration .message{
+            display: inline-block;
+            margin-bottom: 60px;
+        }
+
+        .message{
+            display: none;
+        }
+    
         button:focus {
             outline: none;
         }
@@ -165,8 +183,6 @@
             }
         }
 
-
-
         @keyframes opacity-no-scale {
             0% {
                 opacity: 1;
@@ -199,6 +215,12 @@
             vertical-align: middle;
             mix-blend-mode: lighten;
             opacity: 0;
+        }
+
+
+        .regenaration .result{
+            background-image: url(images/r/background.png);
+
         }
 
         .result img {
@@ -236,6 +258,13 @@
         .episode-quote h4 {
             margin: 0px;
             font-weight: 200;
+            letter-spacing: 6px;
+            font-size: 22px;
+        }
+
+        .message h4 {
+            margin: 0px;
+            font-weight: 300;
             letter-spacing: 6px;
             font-size: 22px;
         }
@@ -381,6 +410,7 @@
                 <div class="logo">
                     <img src="images/logo.png">
                 </div>
+                <div class="message"><h4>THE CLOCK IS STRICKING TWELVE</h4></div>
                 <div class="btn">
                     <button></button>
                     <div>
