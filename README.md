@@ -29,6 +29,7 @@
 <p>Multi-part stories are still under heavy development, i will push as soon as possible</p>
 <p>Regenerate button, you can guess what it is</p>
 <p>Mute button, almost there</p>
+<p>Optimize SEO: What is a website without seo</p>
 
 <h3 id="c3">Known Issues</h3>
 <p>Some images are missing, i'm still trying to figure out which</p>

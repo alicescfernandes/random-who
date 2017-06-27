@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Allow: /index.html
+Disallow: /app/
+Disallow: /images/
+Disallow: /video/
+Disallow: /webfont/
+Disallow: /audio/
+
+Sitemap: https://alicescfernandes.github.io/random-who/sitemap.xml
