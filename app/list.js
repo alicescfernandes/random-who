@@ -1027,7 +1027,9 @@
             "prev": ["s10e11"]
         },
         "image": "s10e12",
-        "theme":"s09e10"
+        "theme":"s09e10",
+        "quote":"Where's there's tears, there's hope"
+
     }
     ]
 }]
