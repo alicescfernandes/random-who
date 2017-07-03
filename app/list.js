@@ -1015,7 +1015,9 @@
             "next": ["s10e12"]
         },
         "quote":"I waited for you...I waited for you",
-        "image": "s10e11"
+        "image": "s10e11",
+        "theme":"randomwhospecial12"
+
     }, {
         "numeroEpisodio": "12",
         "nome": "The Doctor Falls",

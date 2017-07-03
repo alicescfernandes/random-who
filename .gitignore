@@ -3,3 +3,4 @@ music/
 app/app-dev.js
 app/list-full.js
 layout/
+app/compile.bat
