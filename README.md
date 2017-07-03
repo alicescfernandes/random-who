@@ -1,4 +1,4 @@
-<img src="https://alicescfernandes.github.io/random-who/images/banner.jpg">
+img src="https://alicescfernandes.github.io/random-who/images/banner.jpg">
 <h2>Random Who</h2>
 <h3>A random doctor who episode sorter</h3>
 
@@ -34,3 +34,5 @@
 <h3 id="c3">Known Issues</h3>
 <p>Some images are missing, i'm still trying to figure out which</p>
 <p>Still trying to fix the mobile presentation of this website</p>
+<p>SEO still needs improving</p>
+<p>Some specials apear with the arcs transparent</p>

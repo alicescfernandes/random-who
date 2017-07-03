@@ -1016,6 +1016,16 @@
         },
         "quote":"I waited for you...I waited for you",
         "image": "s10e11"
+    }, {
+        "numeroEpisodio": "12",
+        "nome": "The Doctor Falls",
+        "escritor": "Steven Moffat",
+        "arc": {
+            "type": "Two Parter",
+            "prev": ["s10e11"]
+        },
+        "image": "s10e12",
+        "theme":"s09e10"
     }
     ]
 }]
