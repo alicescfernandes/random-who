@@ -933,7 +933,6 @@
         "escritor": "Steven Moffat",
         "nome": "The Return of Doctor Mysterio",
         "image": "s10xmas01",
-        "quote":"Everything ends and it's always sad, but everything begins again, too. And that's always happy",
         "special": true
     },
 
@@ -1034,7 +1033,7 @@
         "nome": "Twice Upon a Time",
         "image": "s10xmas02",
         "special": true,
-        "theme":"s09e10",
+        "theme":"randowhospecial12",
         "quote":"Doctor..i let you go"
     }
     ]
