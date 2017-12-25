@@ -1,4 +1,4 @@
-img src="https://alicescfernandes.github.io/random-who/images/banner.jpg">
+<img src="https://alicescfernandes.github.io/random-who/images/banner.jpg">
 <h2>Random Who</h2>
 <h3>A random doctor who episode sorter</h3>
 
@@ -11,8 +11,8 @@ img src="https://alicescfernandes.github.io/random-who/images/banner.jpg">
 </ul>
 </h6>
 
-<p>What episode you are going to whatch when there is no Doctor Who on the telly? Now, you don't have to decide, let the computer do that for you!</p>
-<p>This is already the 4th version of this tool, and this time, i decided to release it to the public. Is perhaps, on of the most useless project i've ever done.</p>
+<p>What episode you are going to watch when there is no Doctor Who on the telly? Now, you don't have to decide, let the computer do that for you!</p>
+<p>This is already the 4th version of this tool, and this time, i decided to release it to the public. Is perhaps, one of the most useless project i've ever done.</p>
 <p>My name is Alice, and i am a not-so-professional webdeveloper. I like to do silly projects on my free time, because is fun and sometimes i just want to pass the time.<br>Me and my sister, we are both fans of Doctor Who, and we started to watch the modern season with David Tennant, and ever since, we have been following the adventures of the Doctor across all the time and space. But we often were facing the same issue: there's no Doctor Who on the telly, and is hard to pick an episode, they are all good! So, what are we going to watch? Voilà, that's how this "thing" started.</p>
 <p>Since the original concept to the first demo, there have been several versions of this sorter: with images, with no images, with music and without music, and even Wikipedia integration. But really, all i wanted was to randomly pick an episode to watch.</p>
 <p>All of the previous versions were "ugly" and not presentable, so i decided to take on a 4th version of the sorter, and this time, make it suitable for web.</p>
