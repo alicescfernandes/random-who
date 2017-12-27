@@ -5,8 +5,8 @@
 <h6>Table of Contents<br>
 <br>
 <ul>
-<li><a href="#n1">Minimum Requirements</a></li>
-<li><a href="#c1">New Features</a></li>
+<li><a href="#n1">New Features</a></li>
+<li><a href="#c1">Minimum Requirements</a></li>
 <li><a href="#c2">To be implemented</a></li>
 <li><a href="#c3">Known Issues</a></li>
 </ul>
