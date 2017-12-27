@@ -5,7 +5,8 @@
 <h6>Table of Contents<br>
 <br>
 <ul>
-<li><a href="#c1">Minimum Requirements</a></li>
+<li><a href="#n1">Minimum Requirements</a></li>
+<li><a href="#c1">New Features</a></li>
 <li><a href="#c2">To be implemented</a></li>
 <li><a href="#c3">Known Issues</a></li>
 </ul>
@@ -18,6 +19,17 @@
 <p>All of the previous versions were "ugly" and not presentable, so i decided to take on a 4th version of the sorter, and this time, make it suitable for web.</p>
 
 <br>
+<h3 id="n1">New Features</h3>
+<h4>Regenerate Button</h3>
+<p>The most requested feature is now availabe!. No more reloading the page, you can now ask for a new random episode whitin the website. IS CALLED A..REGENERATION!</p><br>
+<h4>Mute Button</h4>
+<p>If you are tired of hearing the music, you can now mute the sound without having to do it on your computer. The generator now provides you with a mute button, so you can mute within on the website</p><br>
+<h3>New Music and quotes</h3>
+<p>New music as been added and quotes have been added to some episodes<p><br>
+<h3>Updated episodes</h3>
+<p>"Twice Upon A Time" is now part of the generator. Have fun!<p><br>
+
+<br>
 <h3 id="c1">Minimum Requirements</h3>
 <p>You are going to need a computer with a screen that is at least bigger or equal to 1366x768.</p>
 <p><strong>This web page is not optimized for mobile devices, please do not access it on your devices, it will consume data and will be slow.</strong></p>
@@ -26,13 +38,9 @@
 
 
 <h3 id="c2">To be implemented</h3>
-<p>Multi-part stories are still under heavy development, i will push as soon as possible</p>
-<p>Regenerate button, you can guess what it is</p>
-<p>Mute button, almost there</p>
-<p>Optimize SEO: What is a website without seo</p>
+<p>No new features are being developed</p>
 
 <h3 id="c3">Known Issues</h3>
 <p>Some images are missing, i'm still trying to figure out which</p>
 <p>Still trying to fix the mobile presentation of this website</p>
 <p>SEO still needs improving</p>
-<p>Some specials apear with the arcs transparent</p>
