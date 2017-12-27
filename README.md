@@ -21,7 +21,7 @@
 <br>
 <h3 id="n1">New Features</h3>
 <h4>Regenerate Button</h3>
-<p>The most requested feature is now availabe!. No more reloading the page, you can now ask for a new random episode whitin the website. IS CALLED A..REGENERATION!</p><br>
+<p>The most requested feature is now available!. No more reloading the page, you can now ask for a new random episode whitin the website. IS CALLED A..REGENERATION!</p><br>
 <h4>Mute Button</h4>
 <p>If you are tired of hearing the music, you can now mute the sound without having to do it on your computer. The generator now provides you with a mute button, so you can mute within on the website</p><br>
 <h4>New Music and quotes</h4>
