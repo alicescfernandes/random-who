@@ -24,9 +24,9 @@
 <p>The most requested feature is now availabe!. No more reloading the page, you can now ask for a new random episode whitin the website. IS CALLED A..REGENERATION!</p><br>
 <h4>Mute Button</h4>
 <p>If you are tired of hearing the music, you can now mute the sound without having to do it on your computer. The generator now provides you with a mute button, so you can mute within on the website</p><br>
-<h3>New Music and quotes</h3>
+<h4>New Music and quotes</h4>
 <p>New music as been added and quotes have been added to some episodes<p><br>
-<h3>Updated episodes</h3>
+<h4>Updated episodes</h4>
 <p>"Twice Upon A Time" is now part of the generator. Have fun!<p><br>
 
 <br>
