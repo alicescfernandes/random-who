@@ -28,8 +28,6 @@
         "numeroEpisodio": "05",
         "nome": "World War Three",
         "escritor": "Russel T. Davies",
-        
-        "quote": "IM A QUOTE",
         "arc": {
             "type": "Two Parter",
             "prev": ["s01e04"]
@@ -512,7 +510,8 @@
         "escritor": "Steven Moffat",
         "nome": "A Christmas Carol",
         "special": true,
-"image":"s05xmas01",
+        "image":"s05xmas01",
+        "theme":"s05xmas01",
     }, {
         "numeroEpisodio": "01",
         "nome": "The Impossible Astronaut",
@@ -641,7 +640,7 @@
         "numeroEpisodio": "Christmas Episode",
         "escritor": "Steven Moffat",
         "nome": "The Snowmen",
-"image":"s07xmas03",
+        "image":"s07xmas03",
         "special":true
     }, {
         "numeroEpisodio": "06",

@@ -9,7 +9,7 @@
     <META HTTP-EQUIV="CACHE-CONTROL" content="NO-CACHE">
     <META name="AUTHOR" content="Alice Fernandes">
     <META name="COPYRIGHT" content="Done with love by Alice Fernandes">
-   
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
     <meta property="og:type" content="website" />
@@ -78,7 +78,7 @@
             cursor: pointer;
         }
 
-        .regenaration button{
+        .regenaration button {
             background-image: url(images/r/btn.png);
 
         }
@@ -112,19 +112,19 @@
         }
 
         .regenaration img {
-            margin-bottom:60px;
+            margin-bottom: 60px;
         }
 
 
-        .regenaration .message{
+        .regenaration .message {
             display: inline-block;
             margin-bottom: 60px;
         }
 
-        .message{
+        .message {
             display: none;
         }
-    
+
         button:focus {
             outline: none;
         }
@@ -222,10 +222,26 @@
             vertical-align: middle;
             mix-blend-mode: lighten;
             opacity: 0;
+            position: relative;
+            margin-top: -30px;
+        }
+
+        .result .btn {
+            position: absolute;
+            bottom: -71px;
+            left: calc((100% - 200px) / 2);
         }
 
 
-        .regenaration .result{
+        .result .btn button {
+            background-image: url(images/regenerate.png)
+        }
+
+        .regenaration .result .btn button {
+            background-image: url(images/r/regenerate.png)
+        }
+
+        .regenaration .result {
             background-image: url(images/r/background.png);
 
         }
@@ -269,7 +285,8 @@
             font-size: 22px;
         }
 
-        .message h4, .message h1 {
+        .message h4,
+        .message h1 {
             margin: 0px;
             font-weight: 300;
             letter-spacing: 6px;
@@ -324,8 +341,8 @@
                 margin-bottom: 77px;
                 width: 80%;
             }
-            .episode-quote h4{
-            	display: none;
+            .episode-quote h4 {
+                display: none;
             }
 
 
@@ -376,28 +393,104 @@
         }
 
 
-        .mute{
-        	display: none;
-        	position: absolute;
-        	top: 20px;
-        	right: 20px;
-        	background-color: red;
-        	border-radius: 100%;
-        	width: 50px;
-        	height: 50px;
-        	z-index: 99;
-        	cursor: pointer;
+        .mute {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: red;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            z-index: 99;
+            cursor: pointer;
 
         }
-        .muted{
-        	background-color: green;
+
+        .muted {
+            background-color: green;
         }
+
+        .dash {
+            width: 3px;
+            height: 0px;
+            min-height: 0px;
+            display: block;
+            background-color: white;
+            border-radius: 45px;
+            position: absolute;
+            top: 0px;
+            box-sizing: border-box;
+            float: left;
+            transition: all 0.3s;
+        }
+
+        .dash:nth-child(1) {
+            transform-origin: 0px 0px;
+            transform: rotate(-45deg);
+            left: 0px;
+            margin-left: -8px;
+            margin-top: 3px;
+        }
+
+        .dash:nth-child(2) {
+
+            transform-origin: 0px 0px;
+            transform: rotate(45deg);
+            right: 0px;
+            transition-delay: 0.3s;
+
+        }
+
+        .close {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            margin-left: 12px;
+            margin-bottom: 7px;
+        }
+
+        label input {
+            display: none;
+        }
+
+        input:checked+.close>.dash {
+            min-height: 20px;
+            transition: all 0.3s linear;
+        }
+
+        input:checked+.close>.dash:nth-child(1) {
+            transition-delay: 0.3s;
+        }
+
+        label {
+    position: absolute;
+    z-index: 99;
+    top: 5%;
+    right: 5%;
+}
+
+label img {
+    margin-bottom: 0px !important;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
     </style>
 </head>
 
 <body>
-<!--<a href="#" title="Click here to mute" class="mute"></a>-->
-
+    <!--<a href="#" title="Click here to mute" class="mute"></a>-->
+    <label for="mute">
+        <img src="images/sound.png">
+        <input id="mute" type="checkbox">
+        <div class="close">
+            <div class="dash"></div>
+            <div class="dash"></div>
+        </div>
+    </label>
     <div class="background">
         <video loop="" autoplay="" muted="" src="video/bg.mp4">
         </video>
@@ -417,7 +510,9 @@
                 <div class="logo">
                     <img alt="Doctor Who Logo" title="Doctor Who Logo" src="images/logo.png">
                 </div>
-                <div class="message"><h4>THE CLOCK IS STRICKING TWELVE</h4></div>
+                <div class="message">
+                    <h4>THE CLOCK IS STRICKING TWELVE</h4>
+                </div>
                 <div class="btn">
                     <button></button>
                     <div>
@@ -429,9 +524,13 @@
 
         <div class="result">
             <div class="episode-picture">
-                <!--<img data-attr="image" src="">--></div>
+                <!--<img data-attr="image" src="">-->
+            </div>
             <div class="episode-detail">
-                <p><span data-attr="season"></span> <span data-attr="ep"></span></p>
+                <p>
+                    <span data-attr="season"></span>
+                    <span data-attr="ep"></span>
+                </p>
             </div>
             <div class="episode-title">
                 <h3 data-attr="name"></h3>
@@ -442,7 +541,8 @@
             </div>
 
             <div class="episode-quote">
-                <h4><span class="quote-mark">&ldquo;</span>
+                <h4>
+                    <span class="quote-mark">&ldquo;</span>
                     <span class="quote" data-attr="quote"></span>
                     <span class="quote-mark">&rdquo;</span>
                 </h4>
@@ -450,19 +550,27 @@
 
             <div class="episode-arcs">
             </div>
+
+            <div class="btn">
+                <button class="regenerator"></button>
+                <div>
+                </div>
+            </div>
         </div>
     </div>
-      <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)        
+}, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-100869248-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  //ga('create', 'UA-100869248-1', 'auto');
+  //ga('send', 'pageview');
+    </script>
 
-    <script type="text/javascript" class="cleanup" src="app/app.js"></script>
+    <script type="text/javascript" class="cleanup" src="app/app-dev.js"></script>
     <script class="cleanup" type="text/javascript" src="app/list.js"></script>
 
 
