@@ -373,12 +373,14 @@
         "numeroEpisodio": "Easter Special",
         "nome": "The Planet of The Dead",
         "image": "s04special2",
+        "theme": "s04specials",
         "escritor": "Russell T Davies & Gareth Roberts",
         "special": true
     }, {
         "numeroEpisodio": "Special",
         "nome": "The Waters of Mars",
         "image": "s04special3",
+        "theme": "s04specials",
         "escritor": "Russell T Davies & Phil Ford",
         "special": true
     }, {
