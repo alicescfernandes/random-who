@@ -1,4 +1,4 @@
-﻿randomWho.seasons = [{
+﻿var seasons = [{
     "seasonNumber": "01",
     "defaultTheme": "s01",
     "defaultImage": "s01",
@@ -48,7 +48,7 @@
         "numeroEpisodio": "09",
         "nome": "The Empty Child",
         "escritor": "Steven Moffat",
-        
+
         "arc": {
             "type": "Two Parter",
             "next": ["s01e10"]
@@ -58,7 +58,7 @@
         "quote": "Everybody lives, Rose.<br>Just this once....Everybody lives!",
         "nome": "The Doctor Dance's",
         "escritor": "Steven Moffat",
-        
+
         "arc": {
             "type": "Two Parter",
             "prev": ["s01e09"]
@@ -71,7 +71,7 @@
         "numeroEpisodio": "12",
         "escritor": "Russel T. Davies",
         "nome": "Bad Wolf",
-        
+
         "arc": {
             "type": "Three Parter",
             "next": ["s01e13"]
@@ -80,7 +80,7 @@
         "numeroEpisodio": "13",
         "nome": "The Parting Of The Ways",
         "escritor": "Russel T. Davies",
-        
+
         "arc": {
             "type": "Three Parter",
             "prev": ["s01e12"],
@@ -117,7 +117,7 @@
         "numeroEpisodio": "05",
         "escritor": "Tom MacRae",
         "nome": "Rise of the Cybermen",
-        
+
         "arc": {
             "type": "Two Parter",
             "next": ["s02e06"],
@@ -126,7 +126,7 @@
         "numeroEpisodio": "06",
         "escritor": "Tom MacRae",
         "nome": "The Age of Steel",
-        
+
         "arc": {
             "type": "Two Parter",
             "prev": ["s02e05"],
@@ -163,7 +163,7 @@
         "numeroEpisodio": "12",
         "nome": "Army of Ghosts",
         "escritor": "Russel T. Davies",
-        
+
         "quote": "Rose Tyler, I...",
         "arc": {
             "type": "Two Parter",
@@ -173,7 +173,7 @@
         "numeroEpisodio": "13",
         "nome": "Doomsday",
         "image": "s02e13",
-        "escritor": "Russel T. Davies",        
+        "escritor": "Russel T. Davies",
         "arc": {
             "type": "Two Parter",
             "prev": ["s02e12"],
@@ -296,7 +296,7 @@
         "numeroEpisodio": "03",
         "nome": "Planet of the Ood",
         "escritor": "Keith Temple",
-        "theme":"s04e03"
+        "theme": "s04e03"
     }, {
         "numeroEpisodio": "04",
         "nome": "The Sontaran Stratagem",
@@ -512,8 +512,8 @@
         "escritor": "Steven Moffat",
         "nome": "A Christmas Carol",
         "special": true,
-        "image":"s05xmas01",
-        "theme":"s05xmas01",
+        "image": "s05xmas01",
+        "theme": "s05xmas01",
     }, {
         "numeroEpisodio": "01",
         "nome": "The Impossible Astronaut",
@@ -642,8 +642,8 @@
         "numeroEpisodio": "Christmas Episode",
         "escritor": "Steven Moffat",
         "nome": "The Snowmen",
-        "image":"s07xmas03",
-        "special":true
+        "image": "s07xmas03",
+        "special": true
     }, {
         "numeroEpisodio": "06",
         "nome": "The Bells of Saint John",
@@ -693,7 +693,7 @@
         "nome": "The Name Of The Doctor",
         "escritor": "Steven Moffat",
         "theme": "50th",
-"image":"50th",
+        "image": "50th",
         "quote": "No sir..all thirteen of them"
     }, {
         "numeroEpisodio": "Christmas Special",
@@ -718,7 +718,7 @@
         "nome": "Into the Dalek",
         "escritor": "Phil Ford & Steven Moffat",
         "image": "s08e02",
-        "quote":"Am i a good man Clara?"
+        "quote": "Am i a good man Clara?"
 
 
     }, {
@@ -900,7 +900,7 @@
         "numeroEpisodio": "11",
         "nome": "Heaven Sent",
         "escritor": "Steven Moffat",
-"quote":"HOW MANY SECONDS TO ETERNITY",
+        "quote": "HOW MANY SECONDS TO ETERNITY",
         "arc": {
             "type": "Two Parter",
             "next": ["s09e12"]
@@ -919,9 +919,10 @@
         "numeroEpisodio": "Christmas Special",
         "escritor": "Steven Moffat",
         "nome": "The Husbands of River Song",
-        "quote": "Say WHEEEE!",
-        "image": "s09xmas02"
-
+        "quote": "Happy ever after doesn't mean forever.<br> It just means time.",
+        "image": "s09xmas02",
+        "theme": "s09xmas02",
+        "special": true
     }
     ]
 }, {
@@ -934,7 +935,7 @@
         "escritor": "Steven Moffat",
         "nome": "The Return of Doctor Mysterio",
         "image": "s10xmas01",
-        "quote":"Everything ends and it's always sad, but everything begins again, too. And that's always happy",
+        "quote": "Everything ends and it's always sad, but everything begins again, too. And that's always happy",
         "special": true
     },
 
@@ -1016,7 +1017,7 @@
             "type": "Two Parter",
             "next": ["s10e12"]
         },
-        "quote":"I waited for you...I waited for you",
+        "quote": "I waited for you...I waited for you",
         "image": "s10e11"
     }, {
         "numeroEpisodio": "12",
@@ -1027,75 +1028,75 @@
             "prev": ["s10e11"]
         },
         "image": "s10e12",
-        "theme":"s09e10",
-        "quote":"Where's there's tears, there's hope"
+        "theme": "s09e10",
+        "quote": "Where's there's tears, there's hope"
     }, {
         "numeroEpisodio": "Christmas Special",
         "escritor": "Steven Moffat",
         "nome": "Twice Upon a Time",
         "image": "s10xmas02",
         "special": true,
-        "theme":"s09e10",
-        "quote":"Doctor..i let you go"
+        "theme": "s09e10",
+        "quote": "Doctor..i let you go"
     }
     ]
 }]
 
-randomWho.sizes = {
-    "s01e04":132,
-    "s01e05":132,
-    "s01e09":123,
-    "s01e10":147,
-    "s01e11":93,
-    "s01e12":79,
-    "s01e13":174,
-    "s02e05":153,
-    "s02e06":125,
-    "s02e08":163,
-    "s02e09":106,
-    "s02e12":121,
-    "s02e13":85,
-    "s03e04":153,
-    "s03e05":195,
-    "s03e08":112,
-    "s03e09":147,
-    "s03e12":149,
-    "s03e13":187,
-    "s04e04":178,
-    "s04e05":115,
-    "s04e08":160,
-    "s04e09":142,
-    "s04e11":85,
-    "s04e12":131,
-    "s04e13":139,
-    "s04special4":169,
-    "s04special5":167,
-    "s05e04":139,
-    "s05e05":124,
-    "s05e08":134,
-    "s05e09":95,
-    "s05e11":155,
-    "s05e012":101,
-    "s06e05":124,
-    "s06e06":141,
-    "s06e12":103,
-    "s06e13":190,
-    "s08e11":95,
-    "s08e12":121,
-    "s09e01":187,
-    "s09e02":151,
-    "s09e03":118,
-    "s09e04":133,
-    "s09e05":134,
-    "s09e06":156,
-    "s09e07":142,
-    "s09e08":149,
-    "s09e11":99,
-    "s09e12":84,
-    "s10e06":78,
-    "s10e07":158,
-    "s10e08":141,
-    "s10e11":171,
-    "s10e12":132
+var sizes = {
+    "s01e04": 132,
+    "s01e05": 132,
+    "s01e09": 123,
+    "s01e10": 147,
+    "s01e11": 93,
+    "s01e12": 79,
+    "s01e13": 174,
+    "s02e05": 153,
+    "s02e06": 125,
+    "s02e08": 163,
+    "s02e09": 106,
+    "s02e12": 121,
+    "s02e13": 85,
+    "s03e04": 153,
+    "s03e05": 195,
+    "s03e08": 112,
+    "s03e09": 147,
+    "s03e12": 149,
+    "s03e13": 187,
+    "s04e04": 178,
+    "s04e05": 115,
+    "s04e08": 160,
+    "s04e09": 142,
+    "s04e11": 85,
+    "s04e12": 131,
+    "s04e13": 139,
+    "s04special4": 169,
+    "s04special5": 167,
+    "s05e04": 139,
+    "s05e05": 124,
+    "s05e08": 134,
+    "s05e09": 95,
+    "s05e11": 155,
+    "s05e012": 101,
+    "s06e05": 124,
+    "s06e06": 141,
+    "s06e12": 103,
+    "s06e13": 190,
+    "s08e11": 95,
+    "s08e12": 121,
+    "s09e01": 187,
+    "s09e02": 151,
+    "s09e03": 118,
+    "s09e04": 133,
+    "s09e05": 134,
+    "s09e06": 156,
+    "s09e07": 142,
+    "s09e08": 149,
+    "s09e11": 99,
+    "s09e12": 84,
+    "s10e06": 78,
+    "s10e07": 158,
+    "s10e08": 141,
+    "s10e11": 171,
+    "s10e12": 132
 }
 
