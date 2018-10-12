@@ -27,6 +27,9 @@ All of the previous versions were "ugly" and not presentable, so i decided to ta
 
 ### New Features
 
+#### New Episodes
+And ... here we go again! When a new season begins, so does begin the updates. The generator will be updated weekly, with new episodes, and if available, new music, new graphics and quotes! Make sure to comeback every week to see what episodes were added. 
+
 #### Jodie Withaker is HERE!
 Unless you have been living under a rock, the new doctor is now a women (and Chibnall has taken over the show).  This means new logo, new artwork and also new music and a NEW DOCTOR!. So the generator as also updated it's looks, to make it look more 13th.
 
