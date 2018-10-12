@@ -49,7 +49,7 @@ You are going to need a computer with a screen that is at least bigger or equal 
 
 Also, make sure that you have the latest browser version possible, as some features will only work on updated versions
 
-**Internet Explorer users: You will be not be able to hear any type of music. This website uses cutting-edge API's that are not implemented on Internet Explorer. _Sorry about that, but i want to garantee the saftety of the material that doesn't belong to me_**
+**Internet Explorer users: You will be not be able to hear any type of music. This website uses cutting-edge API's that are not implemented on Internet Explorer. _Sorry about that, but i want to garantee the safety of the material that doesn't belong to me_**
 
 ### To be implemented
 No new features are being developed
