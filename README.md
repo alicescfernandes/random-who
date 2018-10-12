@@ -23,7 +23,7 @@ Since the original concept to the first demo, there have been several versions o
 
 All of the previous versions were "ugly" and not presentable, so i decided to take on a 4th version of the sorter, and this time, make it suitable for web.
 
-  
+If you are wondering why, check out the [FAQ](FAQ.md)
 
 ### New Features
 

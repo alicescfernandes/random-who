@@ -1011,7 +1011,7 @@
         "image": "s10e10"
     }, {
         "numeroEpisodio": "11",
-        "nome": "World Enought and Time",
+        "nome": "World Enough and Time",
         "escritor": "Steven Moffat",
         "arc": {
             "type": "Two Parter",
