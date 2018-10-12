@@ -1040,7 +1040,22 @@
         "quote": "Doctor..i let you go"
     }
     ]
-}]
+}, {
+    "seasonNumber": "11",
+    "defaultTheme": "9theme",
+    "defaultImage": "s11",
+    "defaultQuote": "",
+    "episodes": [
+    {
+        "numeroEpisodio": "01",
+        "escritor": "Chris Chibnall",
+        "nome": "The Woman Who Fell to Earth",
+        "image": "s11e01"
+
+    }
+    ]
+}
+]
 
 var sizes = {
     "s01e04": 132,
