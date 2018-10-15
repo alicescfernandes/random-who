@@ -1052,6 +1052,13 @@
         "nome": "The Woman Who Fell to Earth",
         "image": "s11e01"
 
+    },
+    {
+        "numeroEpisodio": "02",
+        "escritor": "Chris Chibnall",
+        "nome": "The Ghost Monument",
+        "image": "s11e02"
+
     }
     ]
 }
