@@ -1046,16 +1046,29 @@
     "defaultImage": "s11",
     "defaultQuote": "",
     "episodes": [
-    {
-        "numeroEpisodio": "01",
-        "escritor": "Chris Chibnall",
-        "nome": "The Woman Who Fell to Earth",
-        "image": "s11e01"
+        {
+            "numeroEpisodio": "01",
+            "escritor": "Chris Chibnall",
+            "nome": "The Woman Who Fell to Earth",
+            "image": "s11e01"
 
-    }
+        },
+        {
+            "numeroEpisodio": "02",
+            "escritor": "Chris Chibnall",
+            "nome": "The Ghost Monument",
+            "image": "s11e02"
+
+        },
+        {
+            "numeroEpisodio": "03",
+            "escritor": "Malorie Blackman & Chris Chibnall",
+            "nome": "Rosa",
+            "image": "s11e03"
+
+        }
     ]
-}
-]
+}]
 
 var sizes = {
     "s01e04": 132,
