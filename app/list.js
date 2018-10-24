@@ -1050,7 +1050,8 @@
             "numeroEpisodio": "01",
             "escritor": "Chris Chibnall",
             "nome": "The Woman Who Fell to Earth",
-            "image": "s11e01"
+            "image": "s11e01",
+            "quote":"This is gonna be fun!"
 
         },
         {
@@ -1065,6 +1066,12 @@
             "escritor": "Malorie Blackman & Chris Chibnall",
             "nome": "Rosa",
             "image": "s11e03"
+        },
+        {
+            "numeroEpisodio": "04",
+            "escritor": "Chris Chibnall",
+            "nome": "Arachnids in the UK",
+            "image": "s11e04"
 
         }
     ]
