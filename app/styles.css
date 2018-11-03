@@ -477,3 +477,11 @@ label img {
     background-image: url(../images/xmas/background.png);
 
 }
+
+
+video {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+}
