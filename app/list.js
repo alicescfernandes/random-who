@@ -1072,6 +1072,12 @@
             "escritor": "Chris Chibnall",
             "nome": "Arachnids in the UK",
             "image": "s11e04"
+        },
+        {
+            "numeroEpisodio": "05",
+            "escritor": "Chris Chibnall",
+            "nome": "The Tsuranga Conundrum",
+            "image": "s11e05"
 
         }
     ]
