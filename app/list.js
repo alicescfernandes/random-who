@@ -1077,7 +1077,14 @@
             "numeroEpisodio": "05",
             "escritor": "Chris Chibnall",
             "nome": "The Tsuranga Conundrum",
+            "quote":"Pting? PTING!",
             "image": "s11e05"
+        },
+        {
+            "numeroEpisodio": "06",
+            "escritor": "Vinay Patel",
+            "nome": "Demons of Punjab",
+            "image": "s11e06"
 
         }
     ]
