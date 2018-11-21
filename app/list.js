@@ -1085,6 +1085,12 @@
             "escritor": "Vinay Patel",
             "nome": "Demons of Punjab",
             "image": "s11e06"
+        },
+        {
+            "numeroEpisodio": "07",
+            "escritor": "Vinay Patel",
+            "nome": "Kerblam!",
+            "image": "s11e07"
 
         }
     ]
