@@ -1098,6 +1098,12 @@
             "escritor": "Joy Wilkinson",
             "nome": "The Witchfinders",
             "image": "s11e08"
+        },
+        {
+            "numeroEpisodio": "09",
+            "escritor": "Ed Hime",
+            "nome": "It Takes You Away",
+            "image": "s11e09"
 
         }
     ]
