@@ -1092,6 +1092,13 @@
             "nome": "Kerblam!",
             "image": "s11e07"
 
+        },
+        {
+            "numeroEpisodio": "08",
+            "escritor": "Joy Wilkinson",
+            "nome": "The Witchfinders",
+            "image": "s11e08"
+
         }
     ]
 }]
