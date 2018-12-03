@@ -1105,7 +1105,16 @@
             "nome": "It Takes You Away",
             "image": "s11e09"
 
+        },
+        {
+            "numeroEpisodio": "10",
+            "escritor": "Chris Chibnall",
+            "nome": "The Battle of Ranskoor Av Kolos",
+            "image": "s11e10"
+
         }
+
+        
     ]
 }]
 
