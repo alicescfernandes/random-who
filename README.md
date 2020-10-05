@@ -1,5 +1,5 @@
 ![](https://alicescfernandes.github.io/random-who/images/banner.jpg)
-
+![](https://www.google-analytics.com/collect?v=1&t=event&tid=UA-100869248-2&cid=555&ec=github&ea=pageview&el=random-who&ev=1)
 Random Who
 ----------
 
