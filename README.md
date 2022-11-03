@@ -26,7 +26,7 @@ All of the previous versions were "ugly" and not presentable, so i decided to ta
 
 If you are wondering why, check out the [FAQ](FAQ.md)
 
-## Roadmap
+### Roadmap
 I know have sort-of roadmap for this: https://github.com/users/alicescfernandes/projects/2
 
 ### New Features
