@@ -8,6 +8,7 @@ Random Who
 ###### Table of Contents  
 
 *   [New Features](#n1)
+*   [Roadmap](#)
 *   [Minimum Requirements](#c1)
 *   [To be implemented](#c2)
 *   [Known Issues](#c3)
@@ -24,6 +25,9 @@ Since the original concept to the first demo, there have been several versions o
 All of the previous versions were "ugly" and not presentable, so i decided to take on a 4th version of the sorter, and this time, make it suitable for web.
 
 If you are wondering why, check out the [FAQ](FAQ.md)
+
+## Roadmap
+I know have sort-of roadmap for this: https://github.com/users/alicescfernandes/projects/2
 
 ### New Features
 
