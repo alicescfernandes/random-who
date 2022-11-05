@@ -1,141 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="canonical" href="https://alicescfernandes.github.io/random-who" />
-		<meta name="google-site-verification" content="LBj8sbd2xCc-s6N_PGz7LNnNQILE9VLUiYKnCfO06S4" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
-		<meta name="AUTHOR" content="Alice Fernandes" />
-		<meta name="COPYRIGHT" content="Done with love by Alice Fernandes" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" />
-		<meta property="og:type" content="website" />
+<html>
+<head>
+<<link rel="stylesheet" href="font/style.css">
+<meta charset="utf8">
 
-		<meta property="og:image" content="https://alicescfernandes.github.io/random-who/images/banner.jpg" />
-		<meta name="twitter:card" content="summary_large_image" />
 
-		<meta property="og:title" content="Random Who - Random Doctor Who episode generator" />
-		<meta name="twitter:title" content="Random Who - Random Doctor Who episode generator" />
-		<!--<META name="DESCRIPTION" content="This page will give you a random doctor who episode for you to watch">
-    <meta property="og:description" content="This page will give you a random doctor who episode for you to watch" />
-    <meta name="twitter:description" content="This page will give you a random doctor who episode for you to watch">-->
-		<meta name="DESCRIPTION" content="Oh, brilliant!'" />
-		<meta property="og:description" content="Oh, brilliant!" />
-		<meta name="twitter:description" content="Oh, brilliant!" />
-		<meta name="twitter:image" content="https://alicescfernandes.github.io/random-who/images/banner.jpg" />
-		<link rel="manifest" href="app/manifest.json" />
+<style type="text/css" media="screen">
 
-		<link rel="stylesheet" href="app/styles.css" />
+body{
+    font-family: dw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    overflow: hidden;
 
-		<title>Random Who - Random Doctor Who Episode Generator</title>
-		<script type="text/javascript">
-			window.rwSettings = {
-				currentTheme: '9theme',
-				currentDoctor: 15,
-				regeneration: {
-					active: false,
-					content: 'Oh, briliant!', //THE CLOCK IS STRIKING TWELVE'S
-					theme: 'randomwhospecial12',
-				},
-			};
-		</script>
-	</head>
+}
 
-	<body>
-		<!--<a href="#" title="Click here to mute" class="mute"></a>-->
-		<label for="mute">
-			<img src="images/sound.png" />
-			<input id="mute" type="checkbox" />
-			<div class="close">
-				<div class="dash"></div>
-				<div class="dash"></div>
-			</div>
-		</label>
-		<div class="background">
-			<video loop="" autoplay="" muted="" src="video/bg_12.mp4"></video>
-		</div>
-		<div class="align-center">
-			<div class="vertical-aligner"></div>
+.container{
+    background-image: url('img/front.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
 
-			<div class="no-mobile">
-				<h1>Sorry, this website is not avaliable for mobile phones</h1>
-				<p>
-					I decided to not give support to mobile phones, because the screens don't have enought width to fit all the data that appears on a
-					normal screen resolution
-				</p>
-				<p>Please see this page on a device with a screen width bigger than 1024px</p>
-			</div>
-			<div class="generator">
-				<div class="mainMenu">
-					<div class="logo">
-						<img alt="Doctor Who Logo" title="Doctor Who Logo" src="images/logo.png" />
-					</div>
-					<div class="message">
-						<h4>Random Episode generator</h4>
-					</div>
-					<div class="btn">
-						<button></button>
-						<div></div>
-					</div>
-					<p class="credits" style="font-size: 12px; font-weight: 400; margin-top: 20px"></p>
-				</div>
-			</div>
+}
 
-			<div class="result">
-				<div class="episode-picture">
-					<!--<img data-attr="image" src="">-->
-				</div>
-				<div class="episode-detail">
-					<p>
-						<span data-attr="season"></span>
-						<span data-attr="ep"></span>
-					</p>
-				</div>
-				<div class="episode-title">
-					<h3 data-attr="name"></h3>
-				</div>
+button#generate {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 147px;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 55%;
+    border-radius: 5px;
+}
+/*
+.result{
+    display: block;
+    width: 500px;
+    margin: auto;
+    height: 500px; 
+    text-align: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 44px;
+}*/
+.result{
+    width: 80%;
+    background-color: rgb(241, 241, 241);
+    display: block;
+    position: relative;
+    top: 0px;
+    /* left: 20%; */
+    color: black;
+    font-family: "Open Sans";
+    box-sizing: border-box;
+    padding: 35px 70px;
+    font-weight: 100;
+    margin: auto;
+    overflow: hidden;
+    max-height: 70%;
+    margin-top: 2%;
+}
+#season{
+    font-size: 33px;
+    font-weight: 100;
+    margin: 0;
+    padding-bottom: 22px;
+}
 
-				<div class="episode-writer">
-					<p data-attr="writer"></p>
-				</div>
+#ep {
+    font-weight: 100;
+    font-size: 23px;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    margin: 0px;
+}
 
-				<div class="episode-quote">
-					<h4>
-						<span class="quote-mark">&ldquo;</span>
-						<span class="quote" data-attr="quote"></span>
-						<span class="quote-mark">&rdquo;</span>
-					</h4>
-				</div>
+h5#info {
+    font-weight: 100;
+    font-size: 16px;
+    font-family: "Open Sans";
+    margin: 0px;
+}
+#wikipedia-stuff{
+    overflow: auto;
+    max-height: 270px;
+}
+.close img{
+        /* filter: grayscale(141%); */
+    width: 15px;
+}
 
-				<div class="episode-arcs"></div>
+span.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    filter: contrast(0%);
+    /* width: 14px; */
+    /* height: inherit; */
+}
 
-				<div class="btn">
-					<button class="regenerator"></button>
-					<div></div>
-				</div>
-			</div>
-		</div>
-		<script>
-			(function (i, s, o, g, r, a, m) {
-				i['GoogleAnalyticsObject'] = r;
-				(i[r] =
-					i[r] ||
-					function () {
-						(i[r].q = i[r].q || []).push(arguments);
-					}),
-					(i[r].l = 1 * new Date());
-				(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-				a.async = 1;
-				a.src = g;
-				m.parentNode.insertBefore(a, m);
-			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+.dw{
+    font-family: dw;
+    text-align: center;
+    color: white;
+    font-size: 65px;
+}
+	</style>
+</head>
 
-			ga('create', 'UA-100869248-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+<body>
 
-		<script type="text/javascript" class="cleanup" src="app/app.min.js"></script>
-		<script class="cleanup" type="text/javascript" src="app/list.min.js?0u800ise"></script>
-	</body>
+<audio src="music/menu.mp3" id="audio" autoplay>
+        
+</audio>
+    <script>
+        var enablePrint = true;
+
+        function getRandom(length) {
+            return Math.floor(Math.random() * length)
+        }
+
+        function printToConsole(text){
+            if(enablePrint){
+               console.log(text)
+            }
+        }
+
+        function readXML() {
+            var season = "";
+            var episode = "";
+            var twoParter = ""
+
+            var myXML = new XMLHttpRequest(); //Objeto da classe XMLHttpRequest
+            myXML.onreadystatechange = function () {
+
+                if (myXML.readyState === 4 && myXML.status === 200) {
+
+                    season = myXML.responseXML.getElementsByTagName("season")[getRandom(myXML.responseXML.getElementsByTagName("season").length)];
+                    episode = season.getElementsByTagName("episode")[getRandom(season.getElementsByTagName("episode").length)]
+
+
+                    //printToConsole(season);
+                    //printToConsole(episode)
+                    document.querySelector('.result').style.display="block";
+                    document.getElementById("season").innerHTML = "Temporada " + season.getAttribute("s")
+
+                    document.getElementById("ep").innerHTML = "Episódio " + episode.getAttribute("e") + " - " + episode.innerHTML;
+                    console.log(episode.innerHTML.split(" "))
+                    document.getElementById('audio').src=`music/${season.getAttribute('themesong')}`;
+                    document.getElementById('audio').play();
+                    document.getElementById('generate').style.display="none";
+                    document.getElementById('menu').style.display="none";
+
+                    requestFromWikipedia(episode.innerHTML.split(" "))
+
+                    if (episode.getAttribute("two-parter") === "true") {
+
+                        var link = episode.getAttribute("link").split(".");
+                        printToConsole(link);
+
+                        season = myXML.responseXML.getElementsByTagName("season")[parseInt(link[0]) - 1]
+                        episode = season.getElementsByTagName("episode")[parseInt(link[1]) - 1]
+                        printToConsole(link[1])
+
+                        document.getElementById("info").innerHTML = "Two Parter with episode " + episode.getAttribute("e");
+
+                    } else {
+                        document.getElementById("info").innerHTML = " "
+
+                    }
+
+
+
+                    // for (var i = 0; i != myXML.responseXML.getElementsByTagName("season").length; i++) {}
+                }
+
+            }
+
+        function requestFromWikipedia(query){
+            var formattedQuery = "";
+            for(var index in query){            
+                if(query[index].length >= 2){
+                    formattedQuery+=query[index]+"+"
+                }
+            }
+            query = formattedQuery; 
+            /* /w/api.php?action=query&format=json&origin=*&prop=extracts&generator=search&exsectionformat=plain&gsrsearch=The+Return+of+Doctor+Mysterio+Doctor+Who&gsrnamespace=0&gsrlimit=1*/    
+            var searchQuery = `https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=extracts%7Cimages&generator=search&exsectionformat=plain&gsrsearch=${query}Doctor+Who&gsrnamespace=0&gsrlimit=1`;
+            var requestWikipedia = new XMLHttpRequest();
+            requestWikipedia.open('GET', searchQuery, true);
+            console.log(searchQuery)
+            requestWikipedia.send();
+            requestWikipedia.onreadystatechange = function(){
+                if(requestWikipedia.status === 200 && requestWikipedia.readyState === 4){
+                    var responseJSON = JSON.parse(requestWikipedia.response);
+                    console.log(responseJSON)               
+                    for(var page in responseJSON.query.pages){
+                        document.getElementById('wikipedia-stuff').innerHTML = responseJSON.query.pages[page].extract;
+                    }
+                    
+                }
+
+            }
+
+        }
+
+            myXML.open("GET", "list.xml", true);
+            myXML.send()
+        }
+
+
+        function regenerate(){
+            document.getElementById('audio').src="music/menu.mp3";
+            document.getElementById('audio').play();
+            document.querySelector('.result').style.display="none";
+            document.getElementById('generate').style.display="block";
+            document.getElementById('menu').style.display="block";
+        }
+    </script>
+    <video src="vortex.mp4" autoplay autoloop loop style="position:absolute;top:0;left:0;width:100%;height:auto;z-index:-1"></video>
+    <div class="container">
+<h1 class="dw">Doctor Who</h1>
+
+    <button class="btn-gradient" id="generate" onclick="readXML()">Gerar</button>
+    
+    <button id="menu" onclick="refresh()" style="visibility:hidden">Go back to menu</button>
+    <div class="result" style="display:none">
+    <span class="close" onclick="regenerate()"><img src="img/close.png"></span>   
+     <h2 id="season"></h2>
+     <h3 id="ep"></h3>
+     <h5 id="info"></h5>
+    <p id="wikipedia-stuff"></p>
+    </div>
+    </div>
+
+</body>
+
 </html>

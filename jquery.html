@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-1.11.3.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var season;
+        var episode;
+        var twoParter;
+
+        function devConsole(string) {
+            var devPrint = true;
+
+            if (devPrint) {
+                console.log(string);
+            }
+
+        }
+
+        function genInt(length, snum) {
+            var randomInt = Math.floor((Math.random() * length) + snum);
+            //devConsole(randomInt);
+            return randomInt;
+
+
+        };
+
+
+
+        function generateEpi() {
+            $.ajax({
+                    type: "GET",
+                    url: "list.xml",
+                    dataType: "xml",
+                    success: function (xml) { //Response passing as function argument 
+
+
+                            devConsole($(xml).find("season").toArray().length)
+
+                            season = $(xml).find("season[s=" + (genInt($(xml).find("season").toArray().length, 1)) + "]").toArray();
+                            devConsole("Season: " + $(season).attr("s"))
+
+
+                            $("#season").html($(season[0]).attr("s"));
+                            episode = $(season[0]).find("episode[e=" + (genInt($(season).find("episode").length - 1, 1)) + "]");
+                            $("#ep").html(episode.attr("e"));
+                            devConsole("Episode: " + episode.attr("e") + " _ " + episode.text())
+
+                            if (episode.attr("two-parter") == "true") {
+                                twoParter = episode.attr("link").toString().split(".");
+                                // devConsole(twoParter[1]);
+                                //devConsole("The Episode is a two parter with " + $(xml).find("season[s=" + twoParter[0] + "]").find("episode[e=" + twoParter[1] + "]").text())
+
+                                $("#info").html("This episode is a two parter with episode " + $(xml).find("season[s=" + parseInt(twoParter[0]) + "]").find("episode[e=" + parseInt(twoParter[1]) + "]").text());
+
+
+
+                            } else {
+
+                                $("#info").html("")
+                            } //Get two parter
+
+
+
+
+                        } //ajax sucess
+
+                }) //$.ajax
+
+        } // Generate Epi
+    </script>
+
+
+    <button id="generate" onclick="generateEpi()">click me to generate a episode</button>
+    <button id="menu" onclick="refresh()" style="visibility:hidden">Go back to menu</button>
+    <p id="season"></p>
+    <p id="ep"></p>
+    <p id="info"></p>
+
+
+
+
+</body>
+
+</html>
