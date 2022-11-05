@@ -1,0 +1,9 @@
+images/original.zip
+music/
+appp/app-dev.js
+appp/list-full.js
+layout/
+app/compile.bat
+index-dev.html
+node_modules/
+gulpfile.js
