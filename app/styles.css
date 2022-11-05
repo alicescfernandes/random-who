@@ -1,3 +1,24 @@
+html:root {
+    --rw-arc-color: 27, 81, 223;
+    --rw-arc-color-darker: rgba(4,31,119, 0.1);
+
+    --rw-arc-xmas-color: 240, 14, 14;
+    --rw-arc-xmas-color-darker: rgba(200,1,1, 0.1);
+
+    --rw-arc-regen-color: 243, 155, 1;
+    --rw-arc-regen-color-darker: rgba(200,128,1, 0.1);
+}
+
+html.regen:root {
+    --rw-arc-color: 243, 155, 1;
+    --rw-arc-color-darker: rgba(200,128,1, 0.05);
+}
+
+html.xmas:root {
+    --rw-arc-color: 240, 14, 14;
+    --rw-arc-color-darker: rgba(200,1,1, 0.05);
+}
+
 body{
     margin:0;
     padding:0;
@@ -397,4 +418,49 @@ label img{
 video{
     display:inline-block;
     position:absolute;
+}
+
+
+
+.arc{
+    background-image: radial-gradient(70px at center, rgba(var(--rw-arc-color), 0.05), rgba(var(--rw-arc-color), 0));
+    background-color: var(--rw-arc-color-darker);
+    box-shadow: inset 0 0 5px rgba(var(--rw-arc-color), 0.25);
+    display:inline-block;
+    padding:10px 30px;
+    text-align:center;
+    color:white;
+}
+
+
+.arc-episode-name, .arc-season-episode{
+    font-family: "Source Sans Pro"
+}
+
+
+.arc:not(.arc-active) .arc-season-episode, .arc:not(.arc-active) .arc-episode-name{
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+}
+
+.arc-season-episode{
+    font-size:12px;
+}
+
+.arc-episode-name{
+    font-size:15px;
+}
+
+.arc:first-child {
+    margin-left:0px;
+   margin-right:5px;
+}
+
+.arc {
+    margin-left:5px;
+    margin-right:5px;
+}
+.arc:last-child {
+    margin-left:5px;
+    margin-right:0px;
 }

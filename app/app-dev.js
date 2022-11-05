@@ -10,6 +10,30 @@ var randomWho = {
 	generated: false,
 	firstRun: true,
 	muted: false,
+
+	createArc: (season, episode, name, isActive = false, isSpecial = false) => {
+		return `<div class="arc ${isActive ? 'arc-active' : ''}">
+		<p class="arc-season-episode">S${season} ${isSpecial ? `E${episode}` : `${episode}`}</p>
+		<p class="arc-episode-name">${name}</p>
+		</div>`;
+	},
+	getEpisode: (season_text, episode_text) => {
+		let parsed_season = parseInt(season_text);
+		let parsed_episode = episode_text;
+
+		let season_data = window.rwSeasons[parsed_season - 1];
+		let episode_data = {};
+		for (let episode of season_data.episodes) {
+			if (episode.numeroEpisodio == episode_text) {
+				episode_data = episode;
+			}
+		}
+
+		return {
+			...season_data,
+			...episode_data,
+		};
+	},
 	init: function () {
 		//check for either blob or webaudio or
 		//blob > webaudio
@@ -19,7 +43,9 @@ var randomWho = {
 
 		if (date.getMonth() == 11 && date.getDate() >= 22 && date.getDate() <= 25) {
 			this.xmas = true;
+			document.documentElement.classList.add('xmas');
 		}
+
 		document.querySelector('.generator').addEventListener('click', () => {
 			this.generate();
 		});
@@ -30,7 +56,9 @@ var randomWho = {
 		if (audio_context != null) {
 			var theme = window.rwSettings.currentTheme + '.txt';
 			if (this.xmas) theme = 's05xmas01.txt';
-			if (this.regeneration.active) theme = this.regeneration.theme + '.txt';
+			if (this.regeneration.active) {
+				theme = this.regeneration.theme + '.txt';
+			}
 
 			this.load(theme);
 		}
@@ -53,10 +81,12 @@ var randomWho = {
 			document.querySelector('body').classList.add('xmas');
 			document.querySelector('.logo img').src = 'images/xmas/logo.png';
 			document.querySelector('.message h4').innerHTML = this.regeneration.content;
+			document.documentElement.classList.add('xmas');
 		}
 
 		if (this.regeneration.active) {
 			document.querySelector('body').classList.add('regenaration');
+			document.documentElement.classList.add('regen');
 			document.querySelector('.logo img').src = 'images/r/logo.png';
 			document.querySelector('.message h4').innerHTML = this.regeneration.content;
 		}
@@ -79,9 +109,8 @@ var randomWho = {
 	},
 	generate: function () {
 		//ga('send', 'event', "generate", "generate");
-		console.trace();
-		var season = seasons.length;
-		season = seasons[Math.floor(Math.random() * season)];
+		var season = window.rwSeasons.length;
+		season = window.rwSeasons[Math.floor(Math.random() * season)];
 
 		//if(proceduralSeason) season = proceduralSeason
 
@@ -99,7 +128,7 @@ var randomWho = {
 		var theme = episode.hasOwnProperty('theme') ? episode.theme : season.defaultTheme;
 		var special = episode.hasOwnProperty('special') ? episode.special : undefined;
 		var arc = episode.hasOwnProperty('arc') ? episode.arc : undefined;
-		var episode_tag = special ? episode.numeroEpisodio : 'e' + episode.numeroEpisodio;
+		var episode_tag = special ? episode.numeroEpisodioHuman : 'e' + episode.numeroEpisodioHuman;
 
 		var base_url = 'images/';
 
@@ -109,36 +138,19 @@ var randomWho = {
 		if (arc && !this.generated) {
 			var arc_html = '';
 			if (arc.hasOwnProperty('prev')) {
-				for (var e in arc.prev) {
-					arc_html +=
-						'<span class="episode-arc" style="background-image: url(' +
-						base_url +
-						'/arc/' +
-						arc.prev[e] +
-						'.png);width:' +
-						sizes[arc.prev[e]] +
-						'px;"></span>';
+				for (var episode_string of arc.prev) {
+					let [arc_season, arc_episode] = episode_string.split('_');
+					let { seasonNumber, numeroEpisodio, special, nome } = this.getEpisode(arc_season, arc_episode);
+					arc_html += this.createArc(seasonNumber, numeroEpisodio, nome, special);
 				}
 			}
-			arc_html +=
-				'<span class="episode-arc" style="background-image: url(' +
-				base_url +
-				'/arc/active/' +
-				arc_id +
-				'.png);width:' +
-				sizes[arc_id] +
-				'px;"></span>';
+			arc_html += this.createArc(season.seasonNumber, episode.numeroEpisodio, episode.nome, true);
 
 			if (arc.hasOwnProperty('next')) {
-				for (var e in arc.next) {
-					arc_html +=
-						'<span class="episode-arc" style="background-image: url(' +
-						base_url +
-						'/arc/' +
-						arc.next[e] +
-						'.png);width:' +
-						sizes[arc.next[e]] +
-						'px;"></span>';
+				for (var episode_string of arc.next) {
+					let [arc_season, arc_episode] = episode_string.split('_');
+					let { seasonNumber, numeroEpisodio, special, nome } = this.getEpisode(arc_season, arc_episode);
+					arc_html += this.createArc(seasonNumber, numeroEpisodio, nome, special);
 				}
 			}
 
@@ -198,41 +210,24 @@ var randomWho = {
 				document.querySelector('.episode-picture').src = 'url(images/' + season.defaultImage + '.png)';
 			};
 		} else {
-			window.setTimeout(function () {
+			window.setTimeout(() => {
 				document.querySelector('.episode-arcs').innerHTML = '';
 				if (arc) {
 					var arc_html = '';
 					if (arc.hasOwnProperty('prev')) {
-						for (var e in arc.prev) {
-							arc_html +=
-								'<span class="episode-arc" style="background-image: url(' +
-								base_url +
-								'/arc/' +
-								arc.prev[e] +
-								'.png);width:' +
-								sizes[arc.prev[e]] +
-								'px;"></span>';
+						for (var episode_string of arc.prev) {
+							let [arc_season, arc_episode] = episode_string.split('_');
+							let { seasonNumber, numeroEpisodio, special, nome } = this.getEpisode(arc_season, arc_episode);
+							arc_html += this.createArc(seasonNumber, numeroEpisodio, nome, special);
 						}
 					}
-					arc_html +=
-						'<span class="episode-arc" style="background-image: url(' +
-						base_url +
-						'/arc/active/' +
-						arc_id +
-						'.png);width:' +
-						sizes[arc_id] +
-						'px;"></span>';
+					arc_html += this.createArc(season.seasonNumber, episode.numeroEpisodio, episode.nome, true);
 
 					if (arc.hasOwnProperty('next')) {
-						for (var e in arc.next) {
-							arc_html +=
-								'<span class="episode-arc" style="background-image: url(' +
-								base_url +
-								'/arc/' +
-								arc.next[e] +
-								'.png);width:' +
-								sizes[arc.next[e]] +
-								'px;"></span>';
+						for (var episode_string of arc.next) {
+							let [arc_season, arc_episode] = episode_string.split('_');
+							let { seasonNumber, numeroEpisodio, special, nome } = this.getEpisode(arc_season, arc_episode);
+							arc_html += this.createArc(seasonNumber, numeroEpisodio, nome, special);
 						}
 					}
 
