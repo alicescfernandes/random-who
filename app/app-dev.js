@@ -20,8 +20,10 @@ var randomWho = {
 		if (date.getMonth() == 11 && date.getDate() >= 22 && date.getDate() <= 25) {
 			this.xmas = true;
 		}
-		document.querySelector('.generator').addEventListener('click', this.generate);
-		document.querySelector('.regenerator').addEventListener('click', this.generate);
+		document.querySelector('.generator').addEventListener('click', () => {
+			this.generate();
+		});
+		document.querySelector('.regenerator').addEventListener('click', () => this.generate());
 
 		var audio_context = this.audio;
 
@@ -75,9 +77,9 @@ var randomWho = {
 
 		window.location.hash = '';
 	},
-	generate: function (proceduralSeason, proceduralEpisode) {
+	generate: function () {
 		//ga('send', 'event', "generate", "generate");
-
+		console.trace();
 		var season = seasons.length;
 		season = seasons[Math.floor(Math.random() * season)];
 
@@ -101,8 +103,8 @@ var randomWho = {
 
 		var base_url = 'images/';
 
-		if (this.xmas == true) base_url = 'images/xmas';
-		if (this.regeneration.active == true) base_url = 'images/r';
+		if (randomWho.xmas == true) base_url = 'images/xmas';
+		if (randomWho.regeneration.active == true) base_url = 'images/r';
 
 		if (arc && !this.generated) {
 			var arc_html = '';
@@ -145,11 +147,11 @@ var randomWho = {
 		var audio_context = this.audio;
 
 		if (audio_context != null && theme != 'inherit') {
-			fadeOut = window.setInterval(function () {
+			fadeOut = window.setInterval(() => {
 				if (this.volume.gain.value <= 0) {
 					this.musica.stop(0);
-					this.load(theme + '.txt', function () {
-						fadeIn = setInterval(function () {
+					this.load(theme + '.txt', () => {
+						fadeIn = setInterval(() => {
 							if (this.volume.gain.value >= 0.99) {
 								window.clearInterval(fadeIn);
 							} else {

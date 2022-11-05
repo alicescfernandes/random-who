@@ -158,6 +158,8 @@ span.episode-arc{
     position:relative;
     margin-top:-30px
 }
+
+
 .result .btn{
     position:absolute;
     bottom:-71px;
@@ -237,6 +239,19 @@ span.quote-mark{
     .result{
         width:996px;
         height:447px
+    }
+    .no-mobile{
+        display:none
+    }
+    .episode-arcs{
+        display:none
+    }
+}
+
+
+@media(max-width:1191px){
+    .result{
+        width:98%;
     }
     .no-mobile{
         display:none
@@ -380,8 +395,6 @@ label img{
     background-image:url(../images/xmas/background.png)
 }
 video{
-    width:100%;
     display:inline-block;
     position:absolute;
-    bottom:20px
 }
